@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sayfa bulunamadı — Yuşa Büyüktalaslıoğlu</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#070707">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400&family=Geist+Mono:wght@400&family=Instrument+Serif:ital@1&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<!-- Self-contained on purpose: hosts serve this file for ANY missing path (also nested ones),
+     where relative links to assets/ would break. -->
+<style>
+  :root {
+    --bg: #070707; --text: #ededed; --dim: #b3b3b3; --line: rgba(255,255,255,.18);
+    --teal-900: #161616; --teal-700: #ededed; --teal-500: #a0a0a0; --teal-300: #ffffff; --yellow: #f2c94c;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: "Geist", "Helvetica Neue", Arial, sans-serif; -webkit-font-smoothing: antialiased;
+    display: grid; place-items: center; overflow: hidden;
+    padding: 24px max(16px, env(safe-area-inset-right)) 24px max(16px, env(safe-area-inset-left));
+  }
+  body::before {
+    content: ""; position: fixed; inset: 0; z-index: -1;
+    background:
+      radial-gradient(60vmax 50vmax at 80% -10%, rgba(150,150,150,.22), transparent 60%),
+      radial-gradient(50vmax 40vmax at -10% 110%, rgba(110,110,110,.22), transparent 60%);
+  }
+  /* dithered dot field, echoing the site's Liquid Wave background */
+  body::after {
+    content: ""; position: fixed; inset: 0; z-index: -1; opacity: .35;
+    background-image: radial-gradient(rgba(255,255,255,.35) 1px, transparent 1.4px);
+    background-size: 10px 10px;
+    -webkit-mask-image: radial-gradient(70% 60% at 50% 55%, #000 10%, transparent 75%);
+            mask-image: radial-gradient(70% 60% at 50% 55%, #000 10%, transparent 75%);
+  }
+  main { width: 100%; max-width: 760px; display: grid; gap: 22px; text-align: center; justify-items: center; }
+  .mono { font-family: "Geist Mono", ui-monospace, monospace; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--dim); }
+  .code {
+    font-family: "Syne", "Helvetica Neue", Arial, sans-serif; font-weight: 800; letter-spacing: -.05em; line-height: 1;
+    font-size: clamp(96px, 25vw, 260px); white-space: nowrap;
+    color: transparent; -webkit-text-stroke: 1.5px rgba(255,255,255,.55);
+    position: relative; margin: 0;
+  }
+  .code span { display: inline-block; animation: drift 6s ease-in-out infinite; }
+  .code span:nth-child(2) { animation-delay: -2s; color: var(--yellow); -webkit-text-stroke: 0; }
+  .code span:nth-child(3) { animation-delay: -4s; }
+  @keyframes drift { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+  h1 { margin: 0; font-family: "Syne", Arial, sans-serif; font-weight: 700; letter-spacing: -.03em; line-height: 1.1; font-size: clamp(28px, 6vw, 48px); text-wrap: balance; }
+  h1 em { font-family: "Instrument Serif", Georgia, serif; font-style: italic; font-weight: 400; color: var(--teal-300); letter-spacing: 0; }
+  p { margin: 0; color: var(--dim); max-width: 46ch; line-height: 1.6; }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 8px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 22px; border-radius: 999px;
+    border: 1px solid rgba(255,255,255,.38); color: var(--text); text-decoration: none;
+    font-family: "Geist Mono", ui-monospace, monospace; font-size: 12px; letter-spacing: .08em; text-transform: uppercase;
+    transition: background .3s, border-color .3s;
+  }
+  .btn:hover { background: var(--teal-500); border-color: var(--teal-500); }
+  .btn--solid { background: var(--teal-700); border-color: var(--teal-700); }
+  .btn:focus-visible { outline: 2px solid var(--teal-300); outline-offset: 3px; }
+  .lang { position: fixed; top: 20px; right: max(16px, env(safe-area-inset-right)); display: flex; gap: 4px; }
+  .lang button { background: none; border: 1px solid var(--line); color: var(--dim); border-radius: 999px; padding: 6px 10px; font: 11px "Geist Mono", monospace; cursor: pointer; min-height: 32px; }
+  .lang button[aria-pressed="true"] { background: var(--teal-700); color: #0a0a0a; border-color: var(--teal-700); }
+  .lang button:focus-visible { outline: 2px solid var(--teal-300); outline-offset: 2px; }
+  @media (prefers-reduced-motion: reduce) { .code span { animation: none; } }
+</style>
+</head>
+<body>
+<div class="lang" role="group" aria-label="Language / Dil">
+  <button type="button" data-lang="tr" lang="tr">TR</button>
+  <button type="button" data-lang="en" lang="en">EN</button>
+</div>
+<main>
+  <span class="mono" data-t="eyebrow">(404) — Sayfa bulunamadı</span>
+  <p class="code" aria-hidden="true"><span>4</span><span>0</span><span>4</span></p>
+  <h1 data-t="title">Bu sayfa <em>kaybolmuş</em>.</h1>
+  <p data-t="text">Aradığın adres taşınmış, silinmiş ya da hiç var olmamış olabilir. Anasayfadan devam edebilirsin.</p>
+  <div class="actions">
+    <a class="btn btn--solid" href="/" data-home data-t="home">Anasayfaya dön →</a>
+    <a class="btn" href="/projeler.html" data-home="projeler.html" data-t="projects">Projeleri gör</a>
+  </div>
+</main>
+<script>
+(function () {
+  var T = {
+    tr: { eyebrow: "(404) — Sayfa bulunamadı", title: "Bu sayfa <em>kaybolmuş</em>.", text: "Aradığın adres taşınmış, silinmiş ya da hiç var olmamış olabilir. Anasayfadan devam edebilirsin.", home: "Anasayfaya dön →", projects: "Projeleri gör", doc: "Sayfa bulunamadı" },
+    en: { eyebrow: "(404) — Page not found", title: "This page got <em>lost</em>.", text: "The address you're looking for may have moved, been removed or never existed. You can carry on from the home page.", home: "Back to home →", projects: "See projects", doc: "Page not found" }
+  };
+  var lang = "tr";
+  try { var s = localStorage.getItem("lang"); if (s === "en" || s === "tr") lang = s; } catch (e) {}
+  // On a GitHub *project* site (user.github.io/repo/...) the site root is the first path segment.
+  var root = "/";
+  if (/\.github\.io$/.test(location.hostname)) {
+    var seg = location.pathname.split("/").filter(Boolean)[0];
+    if (seg && !/\.html?$/.test(seg) && location.hostname.split(".")[0] !== seg) root = "/" + seg + "/";
+  }
+  if (location.protocol === "file:") root = "./";
+  document.querySelectorAll("[data-home]").forEach(function (a) { a.href = root + (a.getAttribute("data-home") || ""); });
+  function apply() {
+    document.documentElement.lang = lang;
+    document.querySelectorAll("[data-t]").forEach(function (el) { el.innerHTML = T[lang][el.getAttribute("data-t")]; });
+    document.title = T[lang].doc + " — Yuşa Büyüktalaslıoğlu";
+    document.querySelectorAll(".lang button").forEach(function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-lang") === lang)); });
+  }
+  document.querySelectorAll(".lang button").forEach(function (b) {
+    b.addEventListener("click", function () { lang = b.getAttribute("data-lang"); try { localStorage.setItem("lang", lang); } catch (e) {} apply(); });
+  });
+  apply();
+})();
+</script>
+</body>
+</html>
