@@ -94,13 +94,8 @@
   };
   var lang = "tr";
   try { var s = localStorage.getItem("lang"); if (s === "en" || s === "tr") lang = s; } catch (e) {}
-  // On a GitHub *project* site (user.github.io/repo/...) the site root is the first path segment.
-  var root = "/";
-  if (/\.github\.io$/.test(location.hostname)) {
-    var seg = location.pathname.split("/").filter(Boolean)[0];
-    if (seg && !/\.html?$/.test(seg) && location.hostname.split(".")[0] !== seg) root = "/" + seg + "/";
-  }
-  if (location.protocol === "file:") root = "./";
+  // The site is served from the domain root (yuusha2006.github.io), so home is always "/".
+  var root = location.protocol === "file:" ? "./" : "/";
   document.querySelectorAll("[data-home]").forEach(function (a) { a.href = root + (a.getAttribute("data-home") || ""); });
   function apply() {
     document.documentElement.lang = lang;
